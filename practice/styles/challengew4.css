@@ -1,0 +1,70 @@
+img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+h1{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+p{
+    color:white;
+    padding-block-start: 0%;
+}
+h2{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    color: white;
+
+}
+h3{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+
+}
+
+p {
+    width: 80%;
+    text-align: left;
+    margin: 1em auto;
+    padding: 1em 5%;
+    color: black;
+}
+#wrap {
+    .white::selection{
+        color:white;
+    }
+}
+.white::selection{
+    color:white;
+}
+a {
+    font-size: 1.5em;
+}
+main p {
+    width: 80%;
+    margin: 20px auto;
+    text-align:center;
+}
+footer p {
+    font-size: 20px;
+    margin: 20px auto;
+    text-decoration-color: blue;
+}
+
+a:hover {
+    background-color: pink;
+    color:white;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-color: pink;
+}
+
