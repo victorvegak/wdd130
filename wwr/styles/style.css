@@ -70,6 +70,7 @@ nav a:hover{
     font-size: .8em;
     line-height: 1.5;
     padding: 35px;
+    font-family: 'roboto', Helvetica, sans-serif;
 }
 .msg h2{
     color: #FFFFFF;
