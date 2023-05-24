@@ -104,8 +104,8 @@ footer .social img{
     padding-top: 15px;
 }
 .home-title{
-    background-color: #06d6a0;
-    color: black;
+   /* background-color: #06d6a0;  Background color was removed */ 
+    color: #FFFFFF;/*color was changed,  That black will not be visible over the image above it in week 7 when you do the final layout.*/
     font-family:'rock salt' ,helvetica, sans-serif;
     font-size: 2em;
     margin-top: 10px;
@@ -114,7 +114,7 @@ h2{
     margin: 0;
 }
 h4{
-    color: black;
+    color: #FFFFFF; /*color was changed,  That black will not be visible over the image above it in week 7 when you do the final layout.*/
 }
 .icon {
     width: 80px;
