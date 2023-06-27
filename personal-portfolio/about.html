@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer & Frontend Developer | Home</title>
+    <link rel="#" href="#">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/resized/Logo.jpg" alt="Designer and Fronted Developer">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <div class = "social-head">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="images/resized/facebook.png" alt="fb icon">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="images/resized/twitter.png" alt="twitter icon">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="images/resized/instagram.png" alt="instagram icon">
+                    </a>
+                </div>
+            </nav>
+        <main class= "about-grid">
+            <section class="about-title">
+                <h2>About</h2>
+                <img class="about-img" src="images/resized/Untitled-design.jpg" alt="designing">
+                <p>
+                    Within my comprehensive web development and design portfolio, you will find a fusion of technical expertise. 
+                    From the first concept to the final product, my portfolio showcases my ability to seamlessly integrate web development 
+                    and design to create cohesive and visually stunning websites. By employing a user-centered approach, 
+                    I ensure that the websites I develop and design not only captivate the audience visually but also provide an intuitive and 
+                    engaging user experience. I take pride in my ability to collaborate closely with clients, understanding their unique requirements and 
+                    transforming their visions into reality. Whether it's a responsive e-commerce platform, a sleek corporate website, 
+                    or a creative personal portfolio, my combined web development and design skills allow me to create impactful digital solutions 
+                    that surpass expectations. 
+                </p>
+                <p>
+                    I invite you to explore my portfolio and witness the harmony between technical expertise and aesthetic innovation.
+                </p>
+            </section>
+            <aside class = "Contact me">
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                      <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" />
+                      </li>
+                      <li>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email" />
+                      </li>
+                      <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                      </li>
+    
+                      <li class="button">
+                        <button type="submit">Send your message</button>
+                      </li>
+                    </ul>
+                  </form>
+                  <div id="feedback"></div>
+            </aside>
+        </main>
+        <footer>
+            <p>&copy;2023 - Victor Manuel Vega</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="about.html">About</a></p>
+            <div class = "social-foot">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/resized/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/resized/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/resized/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
