@@ -1,0 +1,102 @@
+/******************************************************************************
+START grid layout extra credit
+******************************************************************************/
+
+* {
+    box-sizing: border-box;
+}
+  .grid1 {
+    display: grid;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: #eaeaea;
+    grid-column: 1/13;
+    grid-template-columns: 12fr;
+  }
+  
+  .grid1 h1 {
+ 
+    font-size: 40px;
+  }
+  
+  .grid2 {
+    display: grid;
+    grid-template-columns: 12fr;
+    background-color: #c2d4dd;
+    grid-column: 2/6;
+  }
+  .grid2 h2 {
+
+    font-size: 30px
+  }
+  .grid3 {
+    display: grid;
+    grid-column: 6/10;
+    background-color: #f7e6c7;
+    grid-template-columns: 12fr;
+  }
+  
+  .grid3 h3 {
+    font-size: 20px;
+  }
+  
+  .grid4 {
+    display: grid;  
+    grid-template-columns: 12fr;
+    grid-column: 4/11;
+    background-color: #efc7b7;
+  }
+  
+  .grid4 h2 {
+    font-size: 20px;
+  }
+  
+  section {
+    display: grid;
+    grid-column: 2/9;
+    grid-template-columns: 12fr;
+    background-color: #d9e8d4;
+  }
+  
+  section h2 {
+    font-size: 30px
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr, 5fr);
+
+  }
+  
+  
+  legend {
+    font-size: 20px;
+    font-weight: 700;
+    
+  }
+  
+  fieldset > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr, 2fr);
+    grid-gap: 0 1em;
+    align-items: center;
+    
+  }
+  
+  label {
+    text-align: right;
+  }
+  
+  input {
+    width: 100%;
+    align-items: left;
+  }
+  
+  button {
+    background-color: aqua;
+    padding: 0.5rem;
+  }
+  
+  section > div {
+    padding: 1rem;
+  }

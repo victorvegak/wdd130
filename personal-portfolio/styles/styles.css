@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Lato&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #000000;
+    --secondary-color: #fca311;
+    --accent1-color: #e5e5e5;
+    --accent2-color: #6a0101;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: 'Aboreto','cursive';
+    --paragraph-font: 'Lato', sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #000000;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #000000; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #fca311  ;
+    --nav-link-color: #e5e5e5;
+    --nav-background-color: #285cce;
+    --nav-hover-link-color: #6a0101;
+    --nav-hover-background-color: #fca311;
+  }
+
+  /*************************************************************************
+  **  Defaul Tag properties
+  *
+  ********************************************************************************/
+
+body {
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    color: var(--accent1-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+h5 {
+    font-size: 1.10em;
+}
+
+h6 {
+    font-size: 0.75em;
+}
+img {
+    max-width: 100%;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/****************************************************************
+* *
+* default properties for all pages *
+* *
+*****************************************************************/
+.content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: var(--accent1-color);
+
+
+}
+
+main {
+    display: grid;
+    text-align: center;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(12, 10fr);
+    grid-row: 2;
+    gap: 3em 0;
+}
+
+/*  This rule name changes based upon the default button color   
+.btn-blue {
+    background-color: var(--primary-color);
+    padding: 1em 2em;
+    color: var(--accent2-color);
+}*/
+
+/*.buttons {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 30px;
+    border-radius: 20px;
+}*/
+
+/*  This is the default grid layout for all grids. Other grids can be defined as needed. */
+/*.grid-default {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3em 0;
+}*/
+
+
+/****************************************************************
+* *
+* header area properties *
+* *
+*****************************************************************/
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    background-color: var(--secondary-color);
+    text-align: left;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    justify-items: center;
+}
+
+
+/*  HTML format for these next 2 rules
+*    <a class="nav-item" href="...">...</a>    */
+nav a {
+    color: #e5e5e5;
+    padding: 1em;
+}
+
+nav a:hover {
+    color: #6a0101;
+    background-color: #285cce;
+}
+
+
+.logo {
+    width: 100px;
+    padding-top: 5px;
+}
+
+.logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+/*********************************************************
+*
+**Home**
+*
+************************************************************/
+.home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #000;
+    position: relative;
+}
+
+.img-comp {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1;
+    overflow: hidden;
+}
+.imgcomp {
+    height: 66%;
+    width: 100%;
+    position: inherit;
+}
+
+.designer {
+    grid-row: 2;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+.comp-img {
+    width: 100%;
+    width: fit-content;
+    grid-column: 2/3;
+    vertical-align: middle;
+
+}
+
+.frontend {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    grid-row: 2/3;
+}
+
+
+/********************************************************************
+*
+** Home-Grid
+*
+********************************************************************/
+
+.home-msg {
+    grid-column: 1/13;
+    text-align: center;
+    
+}
+
+.design-card {
+    width: 100%;
+    grid-column: 2/5;
+    
+} 
+
+.design-img {
+   
+    height: 350px;
+}
+
+.frontend-card {
+    width: 100%;
+    grid-column: 5/9;
+
+}
+
+.frontend-img {
+    width: 180px;
+}
+
+.education-card {
+    width: 100%;
+    grid-column: 9 / 12 ;
+    height: auto;
+}
+
+.education-img{
+    height: 350px;
+}
+
+/****************************************************************
+* *
+* footer area properties *
+* *
+*****************************************************************/
+footer {
+    background-color: #285cce;
+    color: #ffffff;
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px 15px;
+    
+}
+
+footer p {
+    margin-left: 25px;
+    
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+footer a{
+    color: #e5e5e5;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #6a0101;
+    background-color: #fca311
+}
+.social {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-column: 5;
+
+}
+
