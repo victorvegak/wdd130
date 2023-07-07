@@ -365,9 +365,10 @@ form {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgb(255, 254, 254);
     transition: 0.3s;
-    width: 40%;
+    width: 100%;
     border-radius: 5px;
-    grid-column: 6;
+    grid-column: 12;
+    height: fit-content;
 }
 /*On mouse-over, add a deeper shadow */
 .card:hover {
