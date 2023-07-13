@@ -502,10 +502,16 @@ footer a:hover{
         display: block;
         padding: 15px;
     }
-    #hero {
+    .home {
         margin-top: 0;
     }
-    #hero-msg {
+    .comp-img, .img-comp {
+        width: 100%;
+        margin-top: 0;
+        display: block;
+    }
+
+    .home-grid{
         margin-top: 0;
     }
     #hero-msg h4 {
@@ -534,5 +540,18 @@ footer a:hover{
         margin: 50px auto;
         display: block;
         width: 60%;
+    }
+    .card {
+        width: 50%;
+        display: block;
+        margin-left: 20px;
+    }
+    .about-grid {
+        display: block;
+        width: 80%;
+    }
+    .contact-me {
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }

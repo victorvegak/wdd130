@@ -445,4 +445,14 @@ form {
         display: block;
         width: 60%;
     }
+    .idaho_img {
+        width: 100%;
+    }
+    .utah_img {
+        width: 100%;
+    }
+    .arizona_img {
+        width: 100%;
+    }
+
 }
