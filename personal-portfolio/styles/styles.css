@@ -46,6 +46,7 @@ h1 {
 
 h2 {
     font-size: 2em;
+    text-align: center;
 }
 
 h3 {
@@ -70,6 +71,7 @@ img {
 p {
     padding: 0;
     margin: 0;
+    
 }
 
 a {
@@ -295,6 +297,8 @@ nav a:hover {
 
 p {
     margin-top: 20px;
+    text-align: justify;
+    padding: 1em;
 }
 
 
@@ -410,14 +414,14 @@ form {
 .p1-about {
     text-align: left;
     line-height: 1.5;
-    padding: 10px;
+    padding: 1em;
     margin-top: 20px;
 }
 
 .p2-about {
     text-align: left;
     line-height: 1.5;
-    padding: 10px;
+    padding: 1em;
     margin-top: 20px;
     grid-column: 3;
     display: grid;
@@ -521,26 +525,15 @@ footer a:hover{
         font-size: 25px;
         color: #6f7364;
     }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
+
     #background {
         display: none;
     }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
+
     footer {
         margin-top: 25px;
     }
-    .idaho, .utah, .arizona {
-        margin: 50px auto;
-        display: block;
-        width: 60%;
-    }
+ 
     .card {
         width: 50%;
         display: block;
